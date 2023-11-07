@@ -1,29 +1,44 @@
 'use client'
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import Tools from '../assets/tools.png'
 import FbLogo from '../assets/facebook-logo.png'
 import PinterestLogo from '../assets/pinterest-logo.png'
 import InstaLogo from '../assets/insta-logo.png'
 import VintageCar from '../assets/vintage-car4k.jpeg'
 import React from 'react'
+import { useState, useEffect } from 'react'
+import Logo from '../components/logo'
 
 
-const Hero = (): React.ReactNode => {
+interface logos {
+    description: string,
+    image: StaticImageData,
+    duration: number
+}
+
+const Hero = () => {
+
 
     const logos = [
         {
             description: 'Facebook Icon',
-            image: FbLogo
+            image: FbLogo,
+            duration: 1000
         },
         {
             description: 'Pinterest Icon',
-            image: PinterestLogo
+            image: PinterestLogo,
+            duration: 1500
         },
         {
             description: 'Instagram Icon',
-            image: InstaLogo
+            image: InstaLogo,
+            duration: 2000
         }
     ]
+
+
+
 
 
     return (
@@ -41,7 +56,7 @@ const Hero = (): React.ReactNode => {
                 </div>
                 <div className=" flex gap-4">
                     {logos.map((item, id) => {
-                        return <Image className=" hover:animate-spin hover:cursor-pointer" key={id} src={item.image} alt={item.description}></Image>
+                        return <Logo source={item.image} duration={item.duration} description={item.description} key={id}></Logo>
                     })}
                 </div>
             </div>

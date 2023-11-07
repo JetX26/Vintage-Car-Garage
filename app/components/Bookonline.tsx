@@ -16,15 +16,15 @@ const Bookonline = (): React.ReactNode => {
                     </div>
                     <div className=' flex justify-center'>
                         <div className=' border-black border-[2px]'>
-                            <Image src={Bookimage} alt="Car Steering Wheel"></Image>
+                            <Image className=' h-full' src={Bookimage} alt="Car Steering Wheel"></Image>
                         </div>
-                        <div className='p-20 text-center flex flex-col justify-center gap-4 border-black border-[1px] border-l-0'>
+                        <div className='p-20 relative text-center flex flex-col justify-center items-center gap-4 border-black border-[1px] border-l-0'>
                             <h2 className=' text-xl'>Style My Ride - Consultation</h2>
                             <p>2 hr</p>
                             <p>$100</p>
+                            <button className=' p-2 bg-black text-white w-[50%]'>BOOK NOW</button>
                         </div>
                     </div>
-
                 </div>
                 <Footer></Footer>
             </div>
