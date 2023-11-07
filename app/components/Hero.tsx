@@ -7,7 +7,7 @@ import InstaLogo from '../assets/insta-logo.png'
 import VintageCar from '../assets/vintage-car4k.jpeg'
 import React from 'react'
 import { useState, useEffect } from 'react'
-import Logo from '../components/logo'
+import Logo from '../components/Logo'
 
 
 interface logos {
