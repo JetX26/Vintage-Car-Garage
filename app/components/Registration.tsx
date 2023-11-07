@@ -12,7 +12,7 @@ const Registration = (): React.ReactNode => {
             </a>
             <div className=' scale-125 bg-white w-[35%] h-[50%] rounded-lg flex flex-col items-center text-center justify-evenly'>
                 <div className=' flex flex-col gap-4'>
-                    <h1 className=' text-3xl'>Welcome</h1>
+                    <h1 className=' text-3xl'>Welcome,</h1>
                     <p className=' text-lg'>User</p>
                 </div>
                 <div className=' flex flex-col gap-4'>
