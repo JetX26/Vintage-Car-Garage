@@ -60,7 +60,7 @@ const Navbar = (): React.ReactNode => {
                     }
                 })}
             </div>
-            {matches && <a className='flex items-center' href="/login">
+            {matches && <a className='flex items-center pr-4' href="/login">
                 <button className='text-2xl hover:animate-pulse font-extrabold'>Log In</button>
             </a>}
         </div >
