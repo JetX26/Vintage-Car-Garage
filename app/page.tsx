@@ -7,21 +7,14 @@ import AboutUs from "./components/AboutUs"
 import Thirdsec from "./components/Thirdsec"
 import Fourthsec from "./components/Fourthsec"
 import Footer from "./components/Footer"
-import Image, { StaticImageData } from "next/image"
-import ScrollIcon from '../app/assets/up-arrow.png'
-import { useEffect, useState } from "react"
 
 
 
 
 
 
-export default function Home(): JSX.Element {
-  const [scrollIcon, showScrollIcon] = useState<boolean>(false)
 
-
-
-
+export default function Home(): React.ReactNode {
 
   return (
     <main className="relative">
@@ -33,11 +26,6 @@ export default function Home(): JSX.Element {
       <Thirdsec></Thirdsec>
       <Fourthsec></Fourthsec>
       <Footer></Footer>
-      {/* {scrollIcon ? <a>
-        <button className="fixed bottom-0 right-0 m-4 w-[70px] h-[70px] bg-white border-black rounded-full border-[1px]">
-          <Image src={ScrollIcon} alt="Scroll Up The Page Button"></Image>
-        </button></a> : false} */}
-      { }
     </main>
   )
 }

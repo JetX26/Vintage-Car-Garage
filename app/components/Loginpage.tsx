@@ -9,7 +9,7 @@ const Loginpage = (): React.ReactNode => {
             <a className='flex justify-center' href="/">
                 <button className=' text-white animate-bounce bg-black p-2 rounded-md absolute top-10'>Take me home!</button>
             </a>
-            <div className=' scale-125 bg-white w-[35%] h-[50%] rounded-lg flex flex-col items-center text-center justify-evenly'>
+            <div className=' scale-125 bg-white w-[35%] sm:w-auto sm:h-auto sm:p-10 h-[50%] rounded-lg flex flex-col items-center text-center justify-evenly xs:w-full'>
                 <div className=' flex flex-col gap-4'>
                     <h1 className=' text-3xl'>Welcome,</h1>
                     <p className=' text-lg'>User</p>

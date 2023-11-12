@@ -104,8 +104,8 @@ const Secondsec = (): React.ReactNode => {
 
 
     return (
-        <div id="OUR WORK" className='bg-[#edede9] flex p-32 relative justify-center'>
-            <div className=' flex flex-col items-center absolute top-12'>
+        <div id="OUR WORK" className='bg-[#edede9] flex p-32 relative justify-center xs:text-center xs:p-0 xs:flex-col sm:p-0 sm:flex-col sm:h-auto md:flex-col md:p-0 lg:p-6 lg:flex-col lg:gap-4 xl:p-16 xl:flex-col xl:gap-4 xxl:p-16 xxl:flex-col xxl:gap-4'>
+            <div className=' flex flex-col items-center absolute top-12 xs:relative xs:p-4 sm:relative sm:p-4 md:relative md:p-4 lg:relative xl:relative xxl:relative'>
                 <span>
                     <h2 className=' text-3xl'>OUR WORK</h2>
                 </span>
@@ -113,7 +113,7 @@ const Secondsec = (): React.ReactNode => {
                     <p className=' text-lg'>{`A collection of cars we've renovated with passion`}</p>
                 </span>
             </div>
-            <div className=' grid grid-cols-3 gap-4 mt-10'>
+            <div className=' grid grid-cols-3 gap-4 mt-10 xs:flex xs:flex-col xs:p-2 sm:p-6 sm:flex sm:flex-col sm:items-center md:flex md:flex-col md:items-center md:p-4'>
                 {images.map((item, id) => {
                     <p>{item.description}</p>
                     return <div
@@ -124,7 +124,7 @@ const Secondsec = (): React.ReactNode => {
                             setHoveredItem(null)
                         }}
                         key={id}
-                        className='relative w-[550px] h-[500px]'>
+                        className='relative w-[550px] h-[500px] xs:w-full xs:h-[400px] sm:w-full lg:w-full lg:h-full xl:w-full xl:h-full xxl:w-full'>
                         <div className={`opacity-0 hover:opacity-100 flex flex-col  justify-between items-center text-center w-full h-full absolute bg-[rgba(73,80,87,0.5)] transition-all duration-500`}>
                             <div></div>
                             <p className='text-xl text-white font-mono font-semibold'>{item.description}</p>

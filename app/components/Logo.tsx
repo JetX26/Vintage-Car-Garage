@@ -19,7 +19,7 @@ const Logo = ({ duration, description, source }: props) => {
     }, [])
 
     return (
-        <Image className={`${scale} duration-300 hover:animate-spin hover:cursor-pointer`} src={source} alt={description}></Image>
+        <Image className={`${scale} duration-300 hover:animate-bounce hover:cursor-pointer`} src={source} alt={description}></Image>
     )
 }
 
