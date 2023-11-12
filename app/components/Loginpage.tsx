@@ -7,9 +7,9 @@ const Loginpage = (): React.ReactNode => {
     return (
         <div className='relative bg-[#e5e5e5] h-screen w-screen flex flex-col justify-center items-center'>
             <a className='flex justify-center' href="/">
-                <button className=' text-white animate-bounce bg-black p-2 rounded-md absolute top-10'>Take me home!</button>
+                <button className=' text-white absolute animate-bounce bg-black p-2 rounded-md top-10'>Take me home!</button>
             </a>
-            <div className=' scale-125 bg-white w-[35%] sm:w-auto sm:h-auto sm:p-10 h-[50%] rounded-lg flex flex-col items-center text-center justify-evenly xs:w-full'>
+            <div className='scale-125 bg-white w-[35%] sm:w-auto sm:h-auto sm:p-10 h-[50%] rounded-lg flex flex-col items-center text-center justify-evenly xs:p-10 xs:w-auto xs:scale-100'>
                 <div className=' flex flex-col gap-4'>
                     <h1 className=' text-3xl'>Welcome,</h1>
                     <p className=' text-lg'>User</p>
@@ -27,8 +27,9 @@ const Loginpage = (): React.ReactNode => {
                         <button >Sign Up!</button>
                     </a>
                 </div>
+
             </div>
-            <div className=' w-full absolute bottom-0'>
+            <div className='w-full absolute bottom-0'>
                 <Footer></Footer>
             </div>
         </div>
