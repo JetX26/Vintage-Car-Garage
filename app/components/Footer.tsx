@@ -23,7 +23,7 @@ const logos = [
 
 const Footer = (): React.ReactNode => {
     return (
-        <div className=' bg-black flex flex-col items-center gap-4 p-14 xs:h-auto xs:p-2 xs:gap-1 xs:text-xs xs:text-center sm:text-center md:h-auto md:p-4 md:gap-4 lg:h-auto lg:p-4 lg:gap-1'>
+        <div className=' bg-black flex flex-col items-center gap-4 p-4 h-auto xs:h-auto xs:p-2 xs:gap-1 xs:text-xs xs:text-center sm:text-center md:h-auto md:p-4 md:gap-4 lg:h-auto lg:p-4 lg:gap-1'>
             <div className=' flex gap-4'>
                 {logos.map((item, id) => {
                     return <Image className=' hover:cursor-pointer' key={id} src={item.image} alt={item.name}></Image>
